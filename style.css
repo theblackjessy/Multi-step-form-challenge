@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:hsl(217, 100%, 97%);
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0rem;
+    padding-left:5rem;
+    min-height: 100vh;
+}
+
+.form {
+    width: 900px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1px black;
+}
+
+.form-container {
+    display: flex;
+    padding: 1rem;
+}
+.form-sidebar {
+    background-image: url("./assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 568px;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.circle{
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+    background-color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+.step-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-left: 1rem;
+    color: hsl(0, 0%, 100%);
+}
+.steps{
+    display:flex;
+    align-items: center;
+}
+
+.steps b{
+    text-transform: uppercase;
+}
+.steps span {
+    text-transform: uppercase;
+    color: hsl(229, 24%, 87%);
+    font-size: 12px;
+}
+img{
+    max-width:100%;
+}
+.step .header {
+    margin-bottom: auto;
+    padding-top: 2rem;
+    line-height: 2.5rem;
+}
+.header .title {
+    color: var(--Marine-blue);
+}
+.header .text {
+    color: var(--Cool-gray);
+}
+.next-stp {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    background-color: var(--Marine-blue);
+    color: white;
+    cursor: pointer;
+}
+
+
+/*****Step 1******/
+
+.step-1 {
+    display: flex;
+    width: 90%;
+    padding-left: 3rem;
+
+}
+.step-1 form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    gap: 1rem;
+    
+
+}
+.label {
+    color: hsl(213, 96%, 18%);
+    /* color:red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.step-1 form input {
+    padding: 1rem;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.step-1 form input:focus {
+    outline-color: hsl(243, 100%, 62%);
+} 
+form input::placeholder {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: inherit;
+}
+form .error {
+    display: none;
+    color: hsl(348, 8%, 12%);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.steps .header {
+    margin-bottom: auto;
+    line-height: 1.5rem;
+}
+.header .title {
+    color:hsl(213, 96%, 18%);
+    font-size: 1.7rem;
+    /* margin-bottom: 10px; */
+}
+.header .text {
+    color: hsl(231, 11%, 63%);
+    padding-bottom: 15px;
+}
+.next-step {
+    padding: 0.8rem 1.5rem;
+    border-radius: 7px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-step{
+        padding: 0.8rem 2rem;
+        border-radius: 7px;
+        background-color: white;
+        color: hsl(213, 96%, 18%);
+        font-size: 12px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: 700;
+    
+}
+.btn{
+    padding-top: 4rem;
+    padding-left: 25rem;
+}
+/* STEP 2 */
+.button{
+    display:flex;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+}
+.front{
+    padding-left: 13rem;
+}
+.step-2 {
+    display: flex;
+    width: 90%;
+    padding-left: 3rem;
+}
+form.box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+
+}
+.plan-card {
+    border: 2px solid hsl(229, 24%, 87%);
+    border-radius: 7px;
+    width: 150px;
+    height: 180px;
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.plan-card.selected {
+    border: 2px solid hsl(213, 56%, 52%);
+}
+
+.plan-info{
+    display:flex;
+    flex-direction: column;
+    color: hsl(213, 96%, 18%);
+}
+
+.switcher{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(206, 60%, 90%);
+    height: 3rem;
+    border-radius: 10px;
+
+}
+.switched{
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.monthly,
+.yearly {
+color: hsl(231, 11%, 63%);
+font-weight: 500;
+padding:0px 2rem;
+}
+.sw-active {
+color: hsl(213, 96%, 18%);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: hsl(213, 96%, 18%);
+}
+
+
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 30px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* STEP 3  */
+.step-3 {
+    display: flex;
+    width: 90%;
+    padding-left: 3rem;
+}
+.step-3 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.block {
+    border: 1px solid hsl(243, 100%, 62%);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+    color:hsl(243, 100%, 62%);
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-left: 12px;
+}
+
+.price{
+    margin-left: auto;
+}
+
+.step-3 form input {
+    color: hsl(243, 100%, 62%);
+    /*color: red; */
+    transform: scale(1.3);
+}
+
+.description label {
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+    user-select: none;
+}
+.description small {
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+}
+
+/* STEP 4 */
+.step-4 {
+    display: none;
+    width: 80%;
+    padding-left: 2rem;
+}
+
+.selection-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+
+}
+.selection-container {
+    background-color: hsl(217, 100%, 97%);
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+.selected {
+    border: 2px hsl(243, 100%, 62%);
+    
+}
+
+.selected1 {
+    border: 2px solid hsl(243, 100%, 62%);
+    background-color: hsl(220, 60%, 98%);
+}
+
+.selected-plan {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+.selected-addon {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: hsl(231, 11%, 63%);
+    /* color: black; */
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.selected-addon .service-price {
+    color: hsl(213, 96%, 18%);
+}
+.total {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(231, 11%, 63%);
+}
+.total b {
+    color: hsl(243, 100%, 62%);
+    font-size: 1.2rem;
+}
+.pre-step{
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+    background-color: white;
+    color: hsl(231, 11%, 63%);
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+
+/* STEP 5 */
+.step-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    /* justify-content: center; */
+    padding: 0rem 1rem;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        position: relative;
+    }
+    .form-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: url("./assets/images/bg-sidebar-mobile.svg");
+        flex-direction: row;
+        height: 250px;
+        background-size: cover;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: -1;
+    }
+    .step-content {
+        display: none;
+    }
+    .form {
+        position: absolute;
+        top: 15%;
+        max-width: 375px;
+        background-color: white;
+    }
+    .form-container {
+        padding: 0.8rem;
+    }
+    .button {
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        left: 0;
+        height: 50px;
+    }
+    .step-1 .btn {
+        margin: auto 0 auto auto;
+    }
+    .step-2 form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .step-1 form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .step-1 form input {
+        /* padding: 1rem; */
+        border: 1px solid hsl(231, 11%, 63%);
+        width:230px;
+        border-radius: 7px;
+        font-weight: 500;
+        font-size: 6px;
+    }
+
+    .plan-card {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+    }
+    .steps {
+        gap: 1rem;
+        width: 100%;
+    }
+    .steps.header {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .back-step{
+        padding:5px 5px;
+        padding-left:28px;
+    }
+    .next-step {
+        padding: 10px 5px;
+        width:30px;
+    
+    }
+    .switcher {
+        margin: 2rem 0;
+    }
+}

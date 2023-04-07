@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="stylesheet" href="style.css">
+<title>Multi-step form</title>
+
+</head>
+<body>
+    <main class="form">
+    <section class="form-container">
+        <!--Start side bar-->
+        <aside class="form-sidebar">
+        <div class="steps">
+            <div class="circle">1</div>
+            <article class="step-content">
+                <span>Step 1</span>
+                <b>Your Info</b>
+            </article>
+        </div>  
+
+        <div class="steps">
+            <div class="circle">2</div>
+            <article class="step-content">
+                <span>Step 2</span>
+                <b>Select plan</b>
+            </article>
+        </div>
+
+        <div class="steps">
+            <div class="circle">3</div>
+            <article class="step-content">
+                <span>Step 3</span>
+                <b>Add-ons</b>
+            </article>
+        </div> 
+
+        <div class="steps">
+            <div class="circle">4</div>
+            <article class="step-content">
+                <span>Step 4</span>
+                <b>Summary</b>
+            </article>
+        </div> 
+    </aside>
+<!-- Sidebar end -->
+<!-- Step one starts -->
+    <section class="step step-2">
+        <article class="form-main">
+            <div class="header">
+            <h1 class="title">Select your plan</h1>
+            <p class="text"> You have the option of monthly or yearly billing.</p>
+        </div>
+        <form class="box">
+            <div class="plan-card selected1">
+            <img src="./assets/images/icon-arcade.svg" alt="arcade" />
+            <div class="plan-info chosen">
+                <b>Arcade</b>
+                <span class="plan-priced">$9/mo</span>
+            </div>
+            </div>
+            <div class="plan-card selected">
+            <img src="./assets/images/icon-advanced.svg" alt="arcade" />
+            <div class="plan-info">
+                <b>Advanced</b>
+                <span class="plan-priced">$12/mo</span>
+            </div>
+            </div>
+            <div class="plan-card">
+            <img src="./assets/images/icon-pro.svg" alt="arcade" />
+            <div class="plan-info">
+                <b>Pro</b>
+                <span class="plan-priced">$15/mo</span>
+            </div>
+            </div>
+        </form>
+        <section class="switched">
+        <div class="switcher">
+            <p class="monthly sw-active">Monthly</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <p class="yearly">Yearly</p>
+        </div>
+    </section>
+        <footer class="button">
+            <div class="back">
+                <a href="index.html"class="back-step" type="submit" >Go Back</a>
+            </div>
+            <div class="front">
+            <a href="add.html"class="next-step" type="submit" >Next Step</a>
+        </div>
+    </footer>
+        </article>
+    </section>
+    </section>
+</main>
+</body>
+</html>
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Multi-step form</title>
+
+</head>
+<body>
+  <main class="form">
+    <section class="form-container">
+      <!--Start side bar-->
+      <aside class="form-sidebar">
+        <div class="steps">
+          <div class="circle">1</div>
+            <article class="step-content">
+              <span>Step 1</span>
+              <b>Your Info</b>
+            </article>
+        </div>  
+
+        <div class="steps">
+          <div class="circle">2</div>
+            <article class="step-content">
+              <span>Step 2</span>
+              <b>Select plan</b>
+            </article>
+        </div>
+ 
+        <div class="steps">
+          <div class="circle">3</div>
+            <article class="step-content">
+              <span>Step 3</span>
+              <b>Add-ons</b>
+            </article>
+        </div> 
+
+        <div class="steps">
+          <div class="circle">4</div>
+            <article class="step-content">
+              <span>Step 4</span>
+              <b>Summary</b>
+            </article>
+        </div> 
+      </aside>
+       <!-- Sidebar end -->
+       <!-- Step one starts -->
+       <section class="steps step-1">
+        <article class="form-main">
+          <div class="header">
+            <h1 class="title">Personal Info</h1>
+            <p class="text"> Please provide your name, email address, and phone number.</p>
+          </div>
+          <form>
+            <div class="label">
+              <label for="name">Name</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              type="text"
+              id="name"
+              placeholder="e.g. Stephen King"
+              required/>
+            <div class="label">
+              <label for="email">Email Address</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              type="text"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com"
+              required/>
+            <div class="label">
+              <label for="phone">Phone Number</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input type="tel" id="phone" placeholder="e.g. +1 234 567 890" required/>
+          </form>
+          <footer class="btn">
+            <a href="plan.html"class="next-step" type="submit" >NEXT STEP</a>
+          </footer>
+        </article>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
+
+
+

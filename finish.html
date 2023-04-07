@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="stylesheet" href="style.css">
+<title>Multi-step form</title>
+
+</head>
+<body>
+    <main class="form">
+    <section class="form-container">
+        <!--Start side bar-->
+        <aside class="form-sidebar">
+        <div class="steps">
+            <div class="circle">1</div>
+            <article class="step-content">
+                <span>Step 1</span>
+                <b>Your Info</b>
+            </article>
+        </div>  
+
+        <div class="steps">
+            <div class="circle">2</div>
+            <article class="step-content">
+                <span>Step 2</span>
+                <b>Select plan</b>
+            </article>
+        </div>
+
+        <div class="steps">
+            <div class="circle">3</div>
+            <article class="step-content">
+                <span>Step 3</span>
+                <b>Add-ons</b>
+            </article>
+        </div> 
+
+        <div class="steps">
+            <div class="circle">4</div>
+            <article class="step-content">
+                <span>Step 4</span>
+                <b>Summary</b>
+            </article>
+        </div> 
+    </aside>
+<!-- Sidebar end -->
+<!-- Step  starts -->
+    <section class="step step-3">
+        <article class="form-main">
+            <div class="header">
+            <h1 class="title">Finishing up</h1>
+            <p class="text"> Double-check everything looks OK before confirming.</p>
+        </div>
+        
+        <div class="selection-box">
+            <div class="selection-container">
+                <div class="selected-plan">
+                <p class="plan-name">Arcade(Monthly)</p>
+                <p class="plan-price">$9/mo</p>
+                </div>
+            <hr />
+                <div class="addons">
+                <article>
+            <div class="selected-addon">
+                    <span class="service-name">Online service</span>
+                    <span class="service-price">+$1/mo</span>
+            </div>
+        </article>
+        <article>
+            <div class="selected-addon">
+                    <span class="service-name">Larger storage</span>
+                    <span class="servic-price">+$2/mo</span>
+            </div>
+        </article>
+                </div>
+            </div>
+            <p class="total">Total (per month) <b>+$12/mo</b></p>
+            </div>
+
+        <footer class="button">
+            <div class="back">
+                <a href="add.html"class="pre-step" type="submit" >Go Back</a>
+            </div>
+            <div class="front">
+            <a href="thanks.html"class="next-step" type="submit" >Confirm</a>
+        </div>
+    </footer>
+        </article>
+    </section>
+    </section>
+</main>
+</body>
+</html>
+
+

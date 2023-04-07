@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="stylesheet" href="style.css">
+<title>Multi-step form</title>
+
+</head>
+<body>
+    <main class="form">
+    <section class="form-container">
+        <!--Start side bar-->
+        <aside class="form-sidebar">
+        <div class="steps">
+            <div class="circle">1</div>
+            <article class="step-content">
+                <span>Step 1</span>
+                <b>Your Info</b>
+            </article>
+        </div>  
+
+        <div class="steps">
+            <div class="circle">2</div>
+            <article class="step-content">
+                <span>Step 2</span>
+                <b>Select plan</b>
+            </article>
+        </div>
+
+        <div class="steps">
+            <div class="circle">3</div>
+            <article class="step-content">
+                <span>Step 3</span>
+                <b>Add-ons</b>
+            </article>
+        </div> 
+
+        <div class="steps">
+            <div class="circle">4</div>
+            <article class="step-content">
+                <span>Step 4</span>
+                <b>Summary</b>
+            </article>
+        </div> 
+    </aside>
+<!-- Sidebar end -->
+<!-- Step  starts -->
+    <section class="step step-3">
+        <article class="form-main">
+            <div class="header">
+            <h1 class="title">Pick add-ons</h1>
+            <p class="text"> Add-ons help enhance your gaming experience.</p>
+        </div>
+        <form>
+            <div class="block" data-id="1">
+            <input type="checkbox" id="online" />
+            <div class="description">
+                <label for="online">Online service</label>
+                <small>Access to multiplayer games</small>
+            </div>
+            <p class="price">+$1/mo</p>
+            </div>
+            <div class="block" data-id="2">
+            <input type="checkbox" id="larger"  />
+            <div class="description">
+                <label for="larger">Larger storage</label>
+                <small>Extra 1TB of cloud save</small>
+            </div>
+            <p class="price">+$2/mo</p>
+            </div>
+            <div class="block" data-id="3">
+            <input type="checkbox" id="profile" />
+            <div class="description">
+                <label for="profile">Customizable Profile</label>
+                <small>Custom theme on your profile</small>
+            </div>
+            <p class="price">+$2/mo</p>
+            </div>
+        </form>
+
+        <footer class="button">
+            <div class="back">
+                <a href="plan.html"class="back-step" type="submit" >Go Back</a>
+            </div>
+            <div class="front">
+            <a href="finish.html"class="next-step" type="submit" >Next Step</a>
+        </div>
+    </footer>
+        </article>
+    </section>
+    </section>
+</main>
+</body>
+</html>
+
+
